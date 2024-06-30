@@ -94,38 +94,38 @@ public class finalMap {
      
                 System.out.println( 
                       "                        /\               	                                       _______________________________                                                                                   /\ ");				
-               System.out.println(   
+                System.out.println(   
                       "         ______________/__\______________                                           /__________________________________\		                                                                        /  \");
-               System.out.println(
+                System.out.println(
 		      "           ||                            ||                                         /____________________________________\		                                                               /    \");		
-               System.out.println(
+                System.out.println(
 		      "           ||        COFFEE SHOP	       ||                                         /______________________________________\                                                          __________________/      \____________________");
-               System.out.println(   
+                System.out.println(   
 	             "            ||____________________________||                                                                    ║   ║                                                                 |______________________________________________|");
-               System.out.println(  
+                System.out.println(  
 		      "             //  //  //  // \\  \\ \\  \\ \\  			            	                              ║   ║                                                                   |  ____  ____   __   __   __   ____  ____  |");
-               System.out.println(
+                System.out.println(
 		      "            //  //  //  //   \\  \\ \\  \\ \\                                                                  ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-              System.out.println
+                System.out.println
 		      "          //_ //__//__//_____\\__\\_\\__\\_\\                                                                  ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
-              System.out.println( 
+                System.out.println( 
 		      "           |                                 |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
-              System.out.println(
+                System.out.println(
 		      "           | 	   ________________         |  							              ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
 
-              System.out.println( 
+                System.out.println( 
 		      "           |            |   |   |   |   |    |                                                                 ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
-             System.out.println(
+                System.out.println(
 		      "           |  _______   |___|___|___|___|    |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
-             System.out.println(
+                System.out.println(
 		      "           |  |     |   |   |   |   |   |    |                                                            _____║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-             System.out.println(
+                System.out.println(
 	              "           |  |     |   |___|___|___|___|    |  		                 	               __   __  ║ _ _ ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|");  
-            System.out.println(
+                System.out.println(
 		      "           |  |    o|                        |	═══════════════════════                            |  | |  | ║|_|_|║             ═════════════════════════════════                  _|__________________________________________|_");
-            System.out.println(
+                System.out.println(
                       "           |  |     |                        |    ----------------------               _________|__|_|__|_║_____║___║_______       --------------------------------                 |______________________________________________|");
-            System.out.println(
+                System.out.println(
 		      "           |__|____ |________________________|    ═══════════════════════                                                        ═════════════════════════════════
 
                 System.out.println("       JM's House " + (selectedLocation == 1 ? "[You're Here]" : " ")
