@@ -1,4 +1,4 @@
-import java.util.Scanner; Deannelle 
+import java.util.Scanner; 
 import java.io.IOException;
 import java.util.Random;
 
