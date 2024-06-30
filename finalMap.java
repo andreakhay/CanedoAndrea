@@ -5,8 +5,8 @@ import java.util.Random;
 public class finalMap {
 
         private static String[] allLocations = { "Naruto's House", "Supermarket",
-                        "Aaron Joshua's House", "Michael's House", // names of all locations
-                        "Diomari's House", "CNSC Main Campus" };
+                        "Barbershop", "Coffee shop", // names of all locations
+                        "Gas Station", "CNSC" };
 
         private static int numLocations = 7;
         private static int[] meterDistances = new int[numLocations];
