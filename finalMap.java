@@ -379,7 +379,7 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "Gas Station -> Supermarket", "Gas Station -> Coffee Shop -> Naruto's house -> AJ",
+                                        String[] StringRoutes = { "Gas Station -> Supermarket", "Gas Station -> Coffee Shop -> Naruto's house -> Supermarket",
                                                                 "Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[3] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
