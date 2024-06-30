@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class finalMap {
 
-        private static String[] allLocations = { "Kenet's House", "John Michael's House",
+        private static String[] allLocations = { "Naruto's House", "John Michael's House",
                         "Aaron Joshua's House", "Michael's House", // names of all locations
                         "Diomari's House", "CNSC Main Campus" };
 
