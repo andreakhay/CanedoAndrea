@@ -111,8 +111,7 @@ public class finalMap {
                 System.out.println( 
 		                  "           |                                 |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
                 System.out.println(
-		                  "           | 	   ________________       |  							            ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-
+		                  "           | 	   ________________      |  							          ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
                 System.out.println( 
 		                  "           |            |   |   |   |   |    |                                                                 ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
                 System.out.println(
