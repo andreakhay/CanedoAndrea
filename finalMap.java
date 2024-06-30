@@ -53,7 +53,7 @@ public class finalMap {
         System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
         System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
         System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
-        System.out.println("                          /\\               	                                             _______________________________                                                                              /\\ ");				
+        System.out.println("                           /\\               	                                             _______________________________                                                                              /\\ ");				
         System.out.println("            ______________/__\\______________                                              /__________________________________\\		                                                                 /  \\");
         System.out.println("             ||                          ||                                           /____________________________________\\		                                                                /    \\");		
         System.out.println("             ||        COFFEE SHOP       ||                                       /______________________________________\\                                                           __________________/      \\_____________________");
@@ -90,8 +90,9 @@ public class finalMap {
                 switch (currentLocationNum) {
                         case 0:
                                 if (selectedLocation == 1) {
-                                        String[] stringRoutes = { "Naruto's house -> Coffee Shop", "Naruto's house -> Supermarket -> Gas Station -> Coffee Shop",
-                                                        "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM" };
+                                        String[] stringRoutes = { "Naruto's house -> Coffee Shop", 
+                                                                "Naruto's house -> Supermarket -> Gas Station -> Coffee Shop",
+                                                                "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop" };
                                         int[] intRoute1 = { meterDistances[4] },
                                                         intRoute2 = { meterDistances[0], meterDistances[3],
                                                                         meterDistances[5] },
@@ -101,8 +102,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] stringRoute = {"Naruto's house -> Supermarket", "Naruto's house -> JM -> Diomari -> Supermarket",
-                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket" };
+                                        String[] stringRoute = {"Naruto's house -> Supermarket", "Naruto's house -> Coffee Shop -> Gas Station -> Supermarket",
+                                                                "Naruto's house -> Coffee Shop -> Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[0] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3] },
@@ -112,10 +113,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = {"Naruto's house -> JM -> Barber Shop ",
-                                                        "Naruto's house -> JM -> Diomari -> Supermarket -> Barber Shop",
-                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus -> Barber Shop",
-                                                        "Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus -> Barber Shop" };
+                                        String[] StringRoutes = {"Naruto's house -> Coffee Shop -> Barber Shop ",
+                                                                "Naruto's house -> Coffee Shop -> Gas Station -> Supermarket -> Barber Shop",
+                                                                "Naruto's house -> Coffee Shop -> Gas Station -> CNSC Main Campus -> Barber Shop",
+                                                                "Naruto's house -> Supermarket -> Gas Station -> CNSC Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[1] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3], meterDistances[1] },
@@ -127,8 +128,9 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "Naruto's house -> Supermarket -> Diomari ", "Naruto's house -> JM -> Diomari",
-                                                        "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "Naruto's house -> Supermarket -> Gas Station ", 
+                                                                "Naruto's house -> Coffee Shop -> Gas Station",
+                                                                "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[3] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5] },
                                                         intRoute3 = { meterDistances[0], meterDistances[1],
@@ -137,9 +139,9 @@ public class finalMap {
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
                                         String[] StringRoutes = { "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus ",
-                                                        "Naruto's house -> JM -> Diomari -> Supermarket -> Barber Shop -> CNSC Main Campus",
-                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus",
-                                                        "Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus" };
+                                                                "Naruto's house -> Coffee Shop -> Gas Station -> Supermarket -> Barber Shop -> CNSC Main Campus",
+                                                                "Naruto's house -> Coffee Shop -> Gas Station -> CNSC Main Campus",
+                                                                "Naruto's house -> Supermarket -> Gas Station -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3], meterDistances[1],
@@ -159,8 +161,9 @@ public class finalMap {
 
                         case 1:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "JM -> Naruto's house", "JM -> Diomari -> Supermarket ->Naruto's house",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house" };
+                                        String[] stringRoutes = { "Coffee Shop -> Naruto's house", 
+                                                                "Coffee Shop -> Gas Station -> Supermarket ->Naruto's house",
+                                                                "Coffee Shop -> Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[4] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3],
                                                                         meterDistances[0] },
@@ -170,8 +173,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] stringRoute = { "JM ->Naruto's house -> Supermarket", "JM -> Diomari -> AJ",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket" };
+                                        String[] stringRoute = { "Coffee Shop ->Naruto's house -> Supermarket", 
+                                                                "Coffee Shop -> Gas Station -> Supermarket",
+                                                                "Coffee Shop -> Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3] },
                                                         intRoute3 = { meterDistances[5], meterDistances[6],
@@ -179,10 +183,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "JM -> Naruto's house -> Supermarket -> Barber Shop ",
-                                                        "JM -> Diomari -> Supermarket -> Barber Shop",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop",
-                                                        "JM -> Naruto's house -> Supermarket -> Diomari -> CNSC  Main Campus -> Barber Shop" };
+                                        String[] StringRoutes = { "Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop ",
+                                                                "Coffee Shop -> Gas Station -> Supermarket -> Barber Shop",
+                                                                "Coffee Shop -> Gas Station -> CNSC Main Campus -> Barber Shop",
+                                                                "Coffee Shop -> Naruto's house -> Supermarket -> Gas Station -> CNSC  Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0], meterDistances[1] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3],
                                                                         meterDistances[1] },
@@ -195,8 +199,9 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "JM -> Diomari ", "JM -> Naruto's house -> Supermarket -> Diomari",
-                                                        "JM -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "Coffee Shop -> Gas Station ", 
+                                                                "Coffee Shop -> Naruto's house -> Supermarket -> Gas Station",
+                                                                "Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station" };
                                         int[] intRoute1 = { meterDistances[5] },
                                                         intRoute2 = { meterDistances[4], meterDistances[0],
                                                                         meterDistances[3] },
@@ -206,10 +211,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "JM -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus ",
-                                                        "JM -> Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus",
-                                                        "JM -> Diomari ->Supermarket -> Barber Shop -> CNSC Main Campus",
-                                                        "JM -> Diomari -> CNSC Main Campus" };
+                                        String[] StringRoutes = { "Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus ",
+                                                                "Coffee Shop -> Naruto's house -> Supermarket -> Gas Station -> CNSC Main Campus",
+                                                                "Coffee Shop -> Gas Station ->Supermarket -> Barber Shop -> CNSC Main Campus",
+                                                                "Coffee Shop -> Gas Station -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0], meterDistances[1],
                                                         meterDistances[2] },
                                                         intRoute2 = { meterDistances[4], meterDistances[0],
@@ -229,8 +234,9 @@ public class finalMap {
 
                         case 2:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "AJ -> Kenet", "Supermarket -> Diomari -> JM -> Naruto's house",
-                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM -> Naruto's house" };
+                                        String[] stringRoutes = { "Supermarket -> Naruto's house", 
+                                                                "Supermarket -> Gas Station -> Coffee Shop -> Naruto's house",
+                                                                "Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[0] },
                                                         intRoute2 = { meterDistances[3], meterDistances[5],
                                                                         meterDistances[0] },
@@ -240,8 +246,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "Supermarket -> Naruto's house -> JM", "Supermarket -> Diomari -> JM",
-                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM" };
+                                        String[] stringRoute = { "Supermarket -> Naruto's house -> Coffee Shop", 
+                                                                "Supermarket -> Gas Station -> Coffee Shop",
+                                                                "Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[4] },
                                                         intRoute2 = { meterDistances[3], meterDistances[5] },
                                                         intRoute3 = { meterDistances[1], meterDistances[2],
@@ -249,16 +256,16 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "Supermarket -> Barber Shop",
-                                                        "Supermarket -> Diomari -> CNSC Main Campus -> Barber Shop" };
+                                        String[] StringRoutes = { "Supermarket -> Barber Shop", 
+                                                                "Supermarket -> Gas Station -> CNSC Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[1] },
                                                         intRoute2 = { meterDistances[3], meterDistances[6],
                                                                         meterDistances[2] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "AJ -> Diomari ", "Supermarket -> Kenet -> JM -> Diomari",
-                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "Supermarket -> Gas Station ", "Supermarket -> Naruto's house -> Coffee Shop -> Gas Station",
+                                                                "Supermarket -> Barber Shop -> CNSC Main Campus -> Gas Station" };
                                         int[] intRoute1 = { meterDistances[3] },
                                                         intRoute2 = { meterDistances[0], meterDistances[4],
                                                                         meterDistances[5] },
@@ -268,7 +275,7 @@ public class finalMap {
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
                                         String[] StringRoutes = { "Supermarket -> Barber Shop -> CNSC Main Campus",
-                                                        "Supermarket -> Diomari -> CNSC Main Campus" };
+                                                                "Supermarket -> Gas Station -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[3], meterDistances[6] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
@@ -282,9 +289,9 @@ public class finalMap {
                         case 3:
                                 if (selectedLocation == 0) {
                                         String[] stringRoutes = { "Barber Shop -> Supermarket -> Naruto's house",
-                                                        "Barber Shop -> Supermarket -> Diomari -> JM -> Naruto's house",
-                                                        "Barber Shop -> CNSC Main Campus -> Diomari -> JM -> Naruto's house",
-                                                        "Barber Shop -> CNSC Main Campus -> Diomari -> AJ -> Naruto's house", };
+                                                                "Barber Shop -> Supermarket -> Gas Station -> Coffee Shop -> Naruto's house",
+                                                                "Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house",
+                                                                "Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house", };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[0] },
                                                         intRoute2 = { meterDistances[1], meterDistances[3],
                                                                         meterDistances[5], meterDistances[4] },
@@ -296,10 +303,10 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "Michael -> Supermarket -> Naruto's house -> JM",
-                                                        "Michael -> Supermarket -> Diomari -> JM",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> JM",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house -> JM" };
+                                        String[] stringRoute = { "Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop",
+                                                                "Barber Shop -> Supermarket -> Gas Station -> Coffee Shop",
+                                                                "Barber Shop -> CNSC Main Campus -> Gas Station -> Coffee Shop",
+                                                                "Barber Shop -> CNSC Main Campus -> Gas Station -> Supermarket -> Naruto's house -> Coffee Shop" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[0], meterDistances[4] },
                                                         intRoute2 = { meterDistances[1], meterDistances[3],
                                                                         meterDistances[5] },
@@ -312,17 +319,17 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "Michael -> Supermarket",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> Supermarket" };
+                                        String[] StringRoutes = { "Barber Shop -> Supermarket",
+                                                        "Barber Shop -> CNSC Main Campus -> Gas Station -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[1] },
                                                         intRoute2 = { meterDistances[2], meterDistances[6],
                                                                         meterDistances[3] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "Michael -> Supermarket -> Diomari ",
-                                                        "Michael -> Supermarket -> Naruto's house -> JM -> Diomari",
-                                                        "Michael -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "Barber Shop -> Supermarket -> Gas Station ",
+                                                                "Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop -> Gas Station",
+                                                                "Barber Shop -> CNSC Main Campus -> Gas Station" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[3] },
                                                         intRoute2 = { meterDistances[1], meterDistances[0],
                                                                         meterDistances[4], meterDistances[5] },
@@ -330,9 +337,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "Michael -> CNSC Main Campus",
-                                                        "Michael -> Supermarket -> Naruto's house -> JM -> Diomari -> CNSC Main Campus",
-                                                        "Michael -> Supermarket -> Diomari ->" +
+                                        String[] StringRoutes = { "Barber Shop -> CNSC Main Campus",
+                                                                "Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop -> Gas Station -> CNSC Main Campus",
+                                                                "Barber Shop -> Supermarket -> Gas Station ->" +
                                                                         "CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[2] },
                                                         intRoute2 = { meterDistances[1], meterDistances[0],
@@ -350,8 +357,9 @@ public class finalMap {
 
                         case 4:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "Diomari -> Supermarket -> Naruto's house", "Diomari -> JM -> Naruto's house",
-                                                        "Diomari -> CNSC Main Campus -> Michael -> Supermarket -> Naruto's house" };
+                                        String[] stringRoutes = { "Gas Station -> Supermarket -> Naruto's house", 
+                                                                "Gas Station -> Coffee Shop -> Naruto's house",
+                                                                "Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[0] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4] },
                                                         intRoute3 = { meterDistances[6], meterDistances[2],
@@ -359,8 +367,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "Diomari -> JM", "Diomari -> Supermarket -> Naruto's house -> JM",
-                                                        "Diomari -> CNSC Main Campus -> Michael -> Supermarket -> Naruto's house -> JM" };
+                                        String[] stringRoute = { "Gas Station -> Coffee Shop", 
+                                                                "Gas Station -> Supermarket -> Naruto's house -> Coffee Shop",
+                                                                "Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop" };
                                         int[] intRoute1 = { meterDistances[5] },
                                                         intRoute2 = { meterDistances[3], meterDistances[0],
                                                                         meterDistances[4] },
@@ -370,8 +379,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "Diomari -> Supermarket", "Diomari -> JM -> Naruto's house -> AJ",
-                                                        "Diomari -> CNSC Main Campus -> Michael -> AJ" };
+                                        String[] StringRoutes = { "Gas Station -> Supermarket", "Gas Station -> Coffee Shop -> Naruto's house -> AJ",
+                                                                "Gas Station -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[3] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
                                                                         meterDistances[0] },
@@ -380,9 +389,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "Diomari -> Supermarket -> Michael ",
-                                                        "Diomari -> JM -> Naruto's house -> AJ -> Michael",
-                                                        "Diomari -> CNSC Main Campus -> Michael" };
+                                        String[] StringRoutes = { "Gas Station -> Supermarket -> Barber Shop ",
+                                                                "Gas Station -> Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop",
+                                                                "Gas Station -> CNSC Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[1] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
                                                                         meterDistances[0], meterDistances[1], },
@@ -390,9 +399,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "Diomari -> Supermarket -> Michael -> CNSC Main Campus",
-                                                        "Diomari -> JM -> Naruto's house -> Supermarket -> Michael -> CNSC Main Campus",
-                                                        "Diomari -> CNSC" };
+                                        String[] StringRoutes = { "Gas Station -> Supermarket ->Barber Shop -> CNSC Main Campus",
+                                                                "Gas Station -> Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus",
+                                                                "Gas Station -> CNSC" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
                                                                         meterDistances[0], meterDistances[1],
@@ -408,10 +417,10 @@ public class finalMap {
 
                         case 5:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "CNSC Main Campus -> Michael -> Supermarket -> Naruto's house",
-                                                        "CNSC Main Campus -> Michael -> Supermarket -> Diomari -> JM -> Naruto's house",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house",
-                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house" };
+                                        String[] stringRoutes = { "CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house",
+                                                        "CNSC Main Campus -> Barber Shop -> Supermarket -> Gas Station -> Coffee Shop -> Naruto's house",
+                                                        "CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house",
+                                                        "CNSC Main Campus -> Gas Station -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[0] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
                                                                         meterDistances[3], meterDistances[5],
@@ -424,10 +433,10 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "CNSC Main Campus -> Michael -> Supermarket -> Kenet -> JM",
-                                                        "CNSC Main Campus -> Michael -> Supermarket -> Diomari -> JM",
-                                                        "CNSC Main Campus -> Diomari -> JM",
-                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house -> JM" };
+                                        String[] stringRoute = { "CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop",
+                                                        "CNSC Main Campus -> Barber Shop -> Supermarket -> Gas Station -> Coffee Shop",
+                                                        "CNSC Main Campus -> Gas Station -> Coffee Shop",
+                                                        "CNSC Main Campus -> Gas Station -> Supermarket -> Naruto's house -> Coffee Shop" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[0],
                                                         meterDistances[4] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
@@ -439,9 +448,9 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> Supermarket",
-                                                        "CNSC Main Campus -> Diomari -> Supermarket",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house -> Supermarket" };
+                                        String[] StringRoutes = { "CNSC Main Campus -> Barber Shop -> Supermarket",
+                                                        "CNSC Main Campus -> Gas Station -> Supermarket",
+                                                        "CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1] },
                                                         intRoute2 = { meterDistances[6], meterDistances[3] },
                                                         intRoute3 = { meterDistances[6], meterDistances[5],
@@ -449,9 +458,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "CNSC Main Campus -> Michael",
-                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Michael",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house -> Supermarket -> Michael" };
+                                        String[] StringRoutes = { "CNSC Main Campus -> Barber Shop",
+                                                        "CNSC Main Campus -> Gas Station -> Supermarket -> Barber Shop",
+                                                        "CNSC Main Campus -> Gas Station -> Coffee Shop -> Naruto's house -> Supermarket -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[2] },
                                                         intRoute2 = { meterDistances[6], meterDistances[3],
                                                                         meterDistances[1] },
@@ -461,9 +470,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> Supermarket -> Diomari",
-                                                        "CNSC Main Campus -> Michael -> Supermarket -> Naruto's house -> JM -> Diomari",
-                                                        "CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "CNSC Main Campus -> Barber Shop -> Supermarket -> Gas Station",
+                                                        "CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house -> Coffee Shop -> Gas Station",
+                                                        "CNSC Main Campus -> Gas Station" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[3] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
                                                                         meterDistances[0], meterDistances[4],
