@@ -1,6 +1,5 @@
-import java.util.Scanner; 
-import java.io.IOException;
 import java.util.Random;
+import java.util.Scanner;
 
 public class finalMap {
 
@@ -24,115 +23,54 @@ public class finalMap {
 
         public static void Map(int selectedLocation) {
                 // Map
-                System.out.println(
-                                 "       _______________________________________________________"); 
-                System.out.println(
-                                  "      ║______________________║_______________________________║                          _______________________________________________________                        _______________________________________________________");
-                System.out.println(
-                                  "     //______________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                        ║______________________________║_______________________║                      ║________________________║_____________________________║");
-                System.out.println(
-                                  "    //________________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                       ║______________________________║_______________________\\                     ║________________________║_____________________________\\");
-                System.out.println(
-                                  "   //__________________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                     //_______________________________\\_______________________\\                  //________________________\\______________________________\\");
-                System.out.println(
-                                  "  //____________________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                   //_________________________________\\_______________________\\                //__________________________\\______________________________\\");
-                System.out.println(
-                                  " //______________________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                 //___________________________________\\_______________________\\              //____________________________\\______________________________\\");                                 
-                System.out.println(
-                                  "//________________________________\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\                   ║                             ║                        ║                      ║                          ║                           ║");                                    
-                System.out.println(
-                                  "    ║                            ║                              ║                       ║      _______________        ║     ________________    ║                     ║    _______________       ║      ________________     ║");
-                System.out.println(
-                                  "    ║      _______________       ║                              ║                       ║     |___|___|___|___|       ║   |                |   ║                      ║   |_______________|      ║     |____|______|____|    ║");
-                System.out.println(
-                                  "    ║     |___|___|___|___|      ║                              ║                       ║     |___|___|___|___|       ║   |   SUPERMARKET  |   ║                      ║   |  BARBER SHOP  |      ║     |____|______|____|    ║");
-                System.out.println(
-                                  "    ║     |___|___|___|___|      ║               _______        ║                       ║     |___|___|___|___|       ║   |________________|   ║                      ║   |_______________|      ║     |____|______|____|    ║");
-                System.out.println(
-                                  "    ║                            ║              |___|___|       ║                       ║                             ║                        ║                      ║                          ║                           ║");
-                System.out.println(
-                                  "    ║                            ║              |___|___|       ║                       ║                             ║     ______________     ║                      ║    ______________        ║                           ║");
-                System.out.println(
-                                  "    ║                            ║              |___|___|       ║                       ║                             ║    |       ║      |    ║                      ║    |     ║      |        ║                           ║");
-                System.out.println(
-                                  "    ║               ____         ║                              ║  ══════════════════   ║                             ║    |       ║      |    ║  ══════════════════  ║    |     ║      |        ║                           ║");  
-                System.out.println(
-                                  "    ║              |    |        ║                              ║  ------------------   ║                             ║    |       ║      |    ║  ------------------  ║    |     ║      |        ║                           ║");
-                System.out.println(
-                                  "    ║              |    |        ║                              ║  ══════════════════   ║_____________________________║____|_______║______|____║  ══════════════════  ║____|_____║______|________║___________________________║");
-                System.out.println("   ║______________|____|________║______________________________║  " + meterDistances[0]
-                                + " meters              |______|__|______|             " + meterDistances[1]
-                                + " meters             |_________________|___|________________|");
-                System.out.println("       Kenet's House " + (selectedLocation == 0 ? "[You're Here]" : "  ")
-                                + "                                             AJ's House "
-                                + (selectedLocation == 2 ? "[You're Here]" : " ")
-                                + "                                           Michael's House "
-                                + (selectedLocation == 3 ? "[You're Here]" : " ") + "");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(meterDistances[4]
-                                + " meters ║  |  ║                                                    ║  |  ║   "
-                                + meterDistances[3]
-                                + " meters                                              ║  |  ║  " + meterDistances[2]
-                                + " meters");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-                System.out.println(
-                                "          ║  |  ║                                                    ║  |  ║                                                          ║  |  ║");
-     
-                System.out.println( 
-                                  "                        /\               	                                             _______________________________                                                                                     /\ ");				
-                System.out.println(   
-                                  "         ______________/__\______________                                              /__________________________________\		                                                                        /  \");
-                System.out.println(
-		                  "           ||                            ||                                           /____________________________________\		                                                                       /    \");		
-                System.out.println(
-		                  "           ||        COFFEE SHOP	       ||                                       /______________________________________\                                                          __________________/      \____________________");
-                System.out.println(   
-	                          "           ||__________________________||                                                                    ║   ║                                                                 |______________________________________________|");
-                System.out.println(  
-		                  "             /_/_/_/_/_/_/__\_\_\_\_\_\_\_\  			            	                          ║   ║                                                                   |  ____  ____   __   __   __   ____  ____  |");
-                System.out.println(
-		                  "            /_/_/_/_/_/_/____\_\_\_\_\_\_\_\                                                                  ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-                System.out.println(
-		                  "          /_/_/_/_/_/_/______\_\_\_\_\_\_\_\                                                                  ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
-                System.out.println( 
-		                  "           |                                 |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
-                System.out.println(
-		                  "           | 	   ________________     |  							          ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-                System.out.println( 
-		                  "           |            |   |   |   |   |    |                                                                 ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
-                System.out.println(
-		                  "           |  _______   |___|___|___|___|    |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
-                System.out.println(
-		                  "           |  |     |   |   |   |   |   |    |                                                            _____║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
-                System.out.println(
-	                          "           |  |     |   |___|___|___|___|    |  		                 	           __   __  ║ _ _ ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|");  
-                System.out.println(
-		                  "           |  |    o|                        |    ═══════════════════════                          |  | |  | ║|_|_|║             ═════════════════════════════════                  _|__________________________________________|_");
-                System.out.println(
-                                  "           |  |     |                        |    ----------------------              _________|__|_|__|_║_____║___║_______       --------------------------------                 |______________________________________________|");
-                System.out.println(
-		                  "           |__|____ |________________________|    ═══════════════════════                                                        ═════════════════════════════════
-
-                System.out.println("       JM's House " + (selectedLocation == 1 ? "[You're Here]" : " ")
-                                + "                      " + meterDistances[5]
-                                + " meters                       Diomari's House "
-                                + (selectedLocation == 4 ? "[You're Here]" : " ") + "        " + meterDistances[6]
-                                + " meters                     CNSC Main Campus "
-                                + (selectedLocation == 5 ? "[You're Here]" : " "));
+        System.out.println("          ________________________________________________");
+        System.out.println("          ║______________________║________________________║                              _______________________________________________________                        _______________________________________________________");
+        System.out.println("         //______________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                            ║______________________________║_______________________║                      ║________________________║_____________________________║");
+        System.out.println("        //________________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                           ║______________________________║________________________\\                     ║________________________║_____________________________\\");
+        System.out.println("       //__________________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                         //_______________________________\\________________________\\                   //________________________\\______________________________\\");
+        System.out.println("      //____________________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                      //_________________________________\\_________________________\\                 //__________________________\\______________________________\\");
+        System.out.println("     //______________________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                   //___________________________________\\___________________________\\              //____________________________\\______________________________\\");
+        System.out.println("    //________________________________\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\                       ║                             ║                        ║                      ║                          ║                           ║");
+        System.out.println("    ║                            ║                              ║                       ║      _______________        ║     ________________   ║                      ║    _______________       ║      ________________     ║");
+        System.out.println("    ║      _______________       ║                              ║                       ║     |___|___|___|___|       ║   |                |   ║                      ║   |_______________|      ║     |____|______|____|    ║");
+        System.out.println("    ║     |___|___|___|___|      ║                              ║                       ║     |___|___|___|___|       ║   |   SUPERMARKET  |   ║                      ║   |  BARBER SHOP  |      ║     |____|______|____|    ║");
+        System.out.println("    ║     |___|___|___|___|      ║               _______        ║                       ║     |___|___|___|___|       ║   |________________|   ║                      ║   |_______________|      ║     |____|______|____|    ║");
+        System.out.println("    ║                            ║              |___|___|       ║                       ║                             ║                        ║                      ║                          ║                           ║");
+        System.out.println("    ║                            ║              |___|___|       ║                       ║                             ║     ______________     ║                      ║    ______________        ║                           ║");
+        System.out.println("    ║                            ║              |___|___|       ║                       ║                             ║    |       ║      |    ║                      ║    |     ║      |        ║                           ║");
+        System.out.println("    ║               ____         ║                              ║  ══════════════════   ║                             ║    |       ║      |    ║  ══════════════════  ║    |     ║      |        ║                           ║");
+        System.out.println("    ║              |    |        ║                              ║  ------------------   ║                             ║    |       ║      |    ║  ------------------  ║    |     ║      |        ║                           ║");
+        System.out.println("    ║              |    |        ║                              ║  ══════════════════   ║_____________________________║____|_______║______|____║  ══════════════════  ║____|_____║______|________║___________________________║");
+        System.out.println("    ║______________|____|________║______________________________║  " + meterDistances[0] + " meters                                                                       " + meterDistances[1] + " meters                                  ");
+        System.out.println("           Naruto's House " + (selectedLocation == 0 ? "[You're Here]" : "  ") + "                                                                              Supermarket " + (selectedLocation == 2 ? "[You're Here]" : " ") + "                                                  Barber Shop " + (selectedLocation == 3 ? "[You're Here]" : " ") + "");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println(meterDistances[4] + " meters ║  |  ║                                                                                                               ║  |  ║   " + meterDistances[3] + " meters                           ║  |  ║  " + meterDistances[2] + " meters");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("          ║  |  ║                                                                                                               ║  |  ║                                       ║  |  ║");
+        System.out.println("                          /\\               	                                             _______________________________                                                                              /\\ ");				
+        System.out.println("            ______________/__\\______________                                              /__________________________________\\		                                                                 /  \\");
+        System.out.println("             ||                          ||                                           /____________________________________\\		                                                                /    \\");		
+        System.out.println("             ||        COFFEE SHOP       ||                                       /______________________________________\\                                                           __________________/      \\_____________________");
+        System.out.println("             ||__________________________||                                                                    ║   ║                                                                 |______________________________________________|");
+        System.out.println("             /_/_/_/_/_/_/__\\_\\_\\_\\_\\_\\_\\_\\                                                                    ║   ║                                                                   |  ____  ____   __   __   __   ____  ____  |");
+        System.out.println("            /_/_/_/_/_/_/____\\_\\_\\_\\_\\_\\_\\_\\                                                                   ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
+        System.out.println("           /_/_/_/_/_/_/______\\_\\_\\_\\_\\_\\_\\_\\                                                                  ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
+        System.out.println("           |                                 |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
+        System.out.println("           |                                 |                                                                 ║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
+        System.out.println("           |            |   |   |   |   |    |                                                                 ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");
+        System.out.println("           |  _______   |___|___|___|___|    |                                                                 ║   ║                                                                   |  ____  ____  |  | |  | |  |  ____  ____  |");
+        System.out.println("           |  |     |   |   |   |   |   |    |                                                            _____║   ║                                                                   |  |  |  |  |  |  | |  | |  |  |  |  |  |  |");
+        System.out.println("           |  |     |   |___|___|___|___|    |                                                  __   __  ║ _ _ ║   ║                                                                   |  |__|  |__|  |  | |  | |  |  |__|  |__|  |");  
+        System.out.println("           |  |    o|                        |    ═══════════════════════                      |  | |  | ║|_|_|║   ║             ═════════════════════════════════                    _|__________________________________________|_");
+        System.out.println("           |  |     |                        |    ----------------------              _________|__|_|__|_║_____║___║_______       --------------------------------                   |______________________________________________|");
+        System.out.println("           |__|____ |________________________|    ═══════════════════════                                                        ═════════════════════════════════ "); 
+        System.out.println("                       Coffee Shop " + (selectedLocation == 1 ? "[You're Here]" : " ")  +  "                      " + meterDistances[5] + " meters                       Gas Station "  + (selectedLocation == 4 ? "[You're Here]" : " ") + "                                       " + meterDistances[6] + " meters                                           CNSC Main Campus " + (selectedLocation == 5 ? "[You're Here]" : " "));
 
         }
 
@@ -152,8 +90,8 @@ public class finalMap {
                 switch (currentLocationNum) {
                         case 0:
                                 if (selectedLocation == 1) {
-                                        String[] stringRoutes = { "Kenet -> JM", "Kenet -> AJ -> Diomari -> JM",
-                                                        "Kenet -> AJ -> Michael -> CNSC Main Campus -> Diomari -> JM" };
+                                        String[] stringRoutes = { "Naruto's house -> Coffee Shop", "Naruto's house -> Supermarket -> Gas Station -> Coffee Shop",
+                                                        "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM" };
                                         int[] intRoute1 = { meterDistances[4] },
                                                         intRoute2 = { meterDistances[0], meterDistances[3],
                                                                         meterDistances[5] },
@@ -163,8 +101,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] stringRoute = { "Kenet -> AJ", "Kenet -> JM -> Diomari -> AJ",
-                                                        "Kenet -> JM -> Diomari -> CNSC Main Campus -> Michael -> AJ" };
+                                        String[] stringRoute = {"Naruto's house -> Supermarket", "Naruto's house -> JM -> Diomari -> Supermarket",
+                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[0] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3] },
@@ -174,10 +112,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "Kenet -> JM -> Michael ",
-                                                        "Kenet -> JM -> Diomari -> AJ -> Michael",
-                                                        "Kenet -> JM -> Diomari -> CNSC Main Campus -> Michael",
-                                                        "Kenet -> AJ -> Diomari -> CNSC Main Campus -> Michael" };
+                                        String[] StringRoutes = {"Naruto's house -> JM -> Barber Shop ",
+                                                        "Naruto's house -> JM -> Diomari -> Supermarket -> Barber Shop",
+                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus -> Barber Shop",
+                                                        "Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[1] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3], meterDistances[1] },
@@ -189,8 +127,8 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "Kenet -> AJ -> Diomari ", "Kenet -> JM -> Diomari",
-                                                        "Kenet -> AJ -> Michael -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "Naruto's house -> Supermarket -> Diomari ", "Naruto's house -> JM -> Diomari",
+                                                        "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[3] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5] },
                                                         intRoute3 = { meterDistances[0], meterDistances[1],
@@ -198,10 +136,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "Kenet -> AJ -> Michael -> CNSC Main Campus ",
-                                                        "Kenet -> JM -> Diomari -> AJ -> Michael -> CNSC Main Campus",
-                                                        "Kenet -> JM -> Diomari -> CNSC Main Campus",
-                                                        "Kenet -> AJ -> Diomari -> CNSC Main Campus" };
+                                        String[] StringRoutes = { "Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus ",
+                                                        "Naruto's house -> JM -> Diomari -> Supermarket -> Barber Shop -> CNSC Main Campus",
+                                                        "Naruto's house -> JM -> Diomari -> CNSC Main Campus",
+                                                        "Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[4], meterDistances[5],
                                                                         meterDistances[3], meterDistances[1],
@@ -221,8 +159,8 @@ public class finalMap {
 
                         case 1:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "JM -> Kenet", "JM -> Diomari -> AJ -> Kenet",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Michael -> AJ -> Kenet" };
+                                        String[] stringRoutes = { "JM -> Naruto's house", "JM -> Diomari -> Supermarket ->Naruto's house",
+                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[4] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3],
                                                                         meterDistances[0] },
@@ -232,8 +170,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] stringRoute = { "JM -> Kenet -> AJ", "JM -> Diomari -> AJ",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Michael -> AJ" };
+                                        String[] stringRoute = { "JM ->Naruto's house -> Supermarket", "JM -> Diomari -> AJ",
+                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3] },
                                                         intRoute3 = { meterDistances[5], meterDistances[6],
@@ -241,10 +179,10 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "JM -> Kenet -> AJ -> Michael ",
-                                                        "JM -> Diomari -> AJ -> Michael",
-                                                        "JM -> Diomari -> CNSC Main Campus -> Michael",
-                                                        "JM -> Kenet -> AJ -> Diomari -> CNSC  Main Campus -> Michael" };
+                                        String[] StringRoutes = { "JM -> Naruto's house -> Supermarket -> Barber Shop ",
+                                                        "JM -> Diomari -> Supermarket -> Barber Shop",
+                                                        "JM -> Diomari -> CNSC Main Campus -> Barber Shop",
+                                                        "JM -> Naruto's house -> Supermarket -> Diomari -> CNSC  Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0], meterDistances[1] },
                                                         intRoute2 = { meterDistances[5], meterDistances[3],
                                                                         meterDistances[1] },
@@ -257,8 +195,8 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "JM -> Diomari ", "JM -> Kenet -> AJ -> Diomari",
-                                                        "JM -> Kenet -> AJ -> Michael -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "JM -> Diomari ", "JM -> Naruto's house -> Supermarket -> Diomari",
+                                                        "JM -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
                                         int[] intRoute1 = { meterDistances[5] },
                                                         intRoute2 = { meterDistances[4], meterDistances[0],
                                                                         meterDistances[3] },
@@ -268,9 +206,9 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "JM -> Kenet -> AJ -> Michael -> CNSC Main Campus ",
-                                                        "JM -> Kenet -> AJ -> Diomari -> CNSC Main Campus",
-                                                        "JM -> Diomari -> AJ -> Michael -> CNSC Main Campus",
+                                        String[] StringRoutes = { "JM -> Naruto's house -> Supermarket -> Barber Shop -> CNSC Main Campus ",
+                                                        "JM -> Naruto's house -> Supermarket -> Diomari -> CNSC Main Campus",
+                                                        "JM -> Diomari ->Supermarket -> Barber Shop -> CNSC Main Campus",
                                                         "JM -> Diomari -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[4], meterDistances[0], meterDistances[1],
                                                         meterDistances[2] },
@@ -291,8 +229,8 @@ public class finalMap {
 
                         case 2:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "AJ -> Kenet", "AJ -> Diomari -> JM -> Kenet",
-                                                        "AJ -> Michael -> CNSC Main Campus -> Diomari -> JM -> Kenet" };
+                                        String[] stringRoutes = { "AJ -> Kenet", "Supermarket -> Diomari -> JM -> Naruto's house",
+                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[0] },
                                                         intRoute2 = { meterDistances[3], meterDistances[5],
                                                                         meterDistances[0] },
@@ -302,8 +240,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "AJ -> Kenet -> JM", "AJ -> Diomari -> JM",
-                                                        "AJ -> Michael -> CNSC Main Campus -> Diomari -> JM" };
+                                        String[] stringRoute = { "Supermarket -> Naruto's house -> JM", "Supermarket -> Diomari -> JM",
+                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari -> JM" };
                                         int[] intRoute1 = { meterDistances[0], meterDistances[4] },
                                                         intRoute2 = { meterDistances[3], meterDistances[5] },
                                                         intRoute3 = { meterDistances[1], meterDistances[2],
@@ -311,16 +249,16 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "AJ -> Michael",
-                                                        "AJ -> Diomari -> CNSC Main Campus -> Michael" };
+                                        String[] StringRoutes = { "Supermarket -> Barber Shop",
+                                                        "Supermarket -> Diomari -> CNSC Main Campus -> Barber Shop" };
                                         int[] intRoute1 = { meterDistances[1] },
                                                         intRoute2 = { meterDistances[3], meterDistances[6],
                                                                         meterDistances[2] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "AJ -> Diomari ", "AJ -> Kenet -> JM -> Diomari",
-                                                        "AJ -> Michael -> CNSC Main Campus -> Diomari" };
+                                        String[] StringRoutes = { "AJ -> Diomari ", "Supermarket -> Kenet -> JM -> Diomari",
+                                                        "Supermarket -> Barber Shop -> CNSC Main Campus -> Diomari" };
                                         int[] intRoute1 = { meterDistances[3] },
                                                         intRoute2 = { meterDistances[0], meterDistances[4],
                                                                         meterDistances[5] },
@@ -329,8 +267,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "AJ -> Michael -> CNSC Main Campus",
-                                                        "AJ -> Diomari -> CNSC Main Campus" };
+                                        String[] StringRoutes = { "Supermarket -> Barber Shop -> CNSC Main Campus",
+                                                        "Supermarket -> Diomari -> CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[3], meterDistances[6] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
@@ -343,10 +281,10 @@ public class finalMap {
 
                         case 3:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "Michael -> AJ -> Kenet",
-                                                        "Michael -> AJ -> Diomari -> JM -> Kenet",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> JM -> Kenet",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> AJ -> Kenet", };
+                                        String[] stringRoutes = { "Barber Shop -> Supermarket -> Naruto's house",
+                                                        "Barber Shop -> Supermarket -> Diomari -> JM -> Naruto's house",
+                                                        "Barber Shop -> CNSC Main Campus -> Diomari -> JM -> Naruto's house",
+                                                        "Barber Shop -> CNSC Main Campus -> Diomari -> AJ -> Naruto's house", };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[0] },
                                                         intRoute2 = { meterDistances[1], meterDistances[3],
                                                                         meterDistances[5], meterDistances[4] },
@@ -358,10 +296,10 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "Michael -> AJ -> Kenet -> JM",
-                                                        "Michael -> AJ -> Diomari -> JM",
+                                        String[] stringRoute = { "Michael -> Supermarket -> Naruto's house -> JM",
+                                                        "Michael -> Supermarket -> Diomari -> JM",
                                                         "Michael -> CNSC Main Campus -> Diomari -> JM",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> AJ -> Kenet -> JM" };
+                                                        "Michael -> CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house -> JM" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[0], meterDistances[4] },
                                                         intRoute2 = { meterDistances[1], meterDistances[3],
                                                                         meterDistances[5] },
@@ -374,16 +312,16 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "Michael -> AJ",
-                                                        "Michael -> CNSC Main Campus -> Diomari -> AJ" };
+                                        String[] StringRoutes = { "Michael -> Supermarket",
+                                                        "Michael -> CNSC Main Campus -> Diomari -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[1] },
                                                         intRoute2 = { meterDistances[2], meterDistances[6],
                                                                         meterDistances[3] };
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "Michael -> AJ -> Diomari ",
-                                                        "Michael -> AJ -> Kenet -> JM -> Diomari",
+                                        String[] StringRoutes = { "Michael -> Supermarket -> Diomari ",
+                                                        "Michael -> Supermarket -> Naruto's house -> JM -> Diomari",
                                                         "Michael -> CNSC Main Campus -> Diomari" };
                                         int[] intRoute1 = { meterDistances[1], meterDistances[3] },
                                                         intRoute2 = { meterDistances[1], meterDistances[0],
@@ -393,8 +331,8 @@ public class finalMap {
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
                                         String[] StringRoutes = { "Michael -> CNSC Main Campus",
-                                                        "Michael -> AJ -> Kenet -> JM -> Diomari -> CNSC Main Campus",
-                                                        "Michael -> AJ -> Diomari ->" +
+                                                        "Michael -> Supermarket -> Naruto's house -> JM -> Diomari -> CNSC Main Campus",
+                                                        "Michael -> Supermarket -> Diomari ->" +
                                                                         "CNSC Main Campus" };
                                         int[] intRoute1 = { meterDistances[2] },
                                                         intRoute2 = { meterDistances[1], meterDistances[0],
@@ -412,8 +350,8 @@ public class finalMap {
 
                         case 4:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "Diomari -> AJ -> Kenet", "Diomari -> JM -> Kenet",
-                                                        "Diomari -> CNSC Main Campus -> Michael -> AJ -> Kenet" };
+                                        String[] stringRoutes = { "Diomari -> Supermarket -> Naruto's house", "Diomari -> JM -> Naruto's house",
+                                                        "Diomari -> CNSC Main Campus -> Michael -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[0] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4] },
                                                         intRoute3 = { meterDistances[6], meterDistances[2],
@@ -421,8 +359,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "Diomari -> JM", "Diomari -> AJ -> Kenet -> JM",
-                                                        "Diomari -> CNSC Main Campus -> Michael -> AJ -> Kenet -> JM" };
+                                        String[] stringRoute = { "Diomari -> JM", "Diomari -> Supermarket -> Naruto's house -> JM",
+                                                        "Diomari -> CNSC Main Campus -> Michael -> Supermarket -> Naruto's house -> JM" };
                                         int[] intRoute1 = { meterDistances[5] },
                                                         intRoute2 = { meterDistances[3], meterDistances[0],
                                                                         meterDistances[4] },
@@ -432,7 +370,7 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "Diomari -> AJ", "Diomari -> JM -> Kenet -> AJ",
+                                        String[] StringRoutes = { "Diomari -> Supermarket", "Diomari -> JM -> Naruto's house -> AJ",
                                                         "Diomari -> CNSC Main Campus -> Michael -> AJ" };
                                         int[] intRoute1 = { meterDistances[3] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
@@ -442,8 +380,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 3) {
-                                        String[] StringRoutes = { "Diomari -> AJ -> Michael ",
-                                                        "Diomari -> JM -> Kenet -> AJ -> Michael",
+                                        String[] StringRoutes = { "Diomari -> Supermarket -> Michael ",
+                                                        "Diomari -> JM -> Naruto's house -> AJ -> Michael",
                                                         "Diomari -> CNSC Main Campus -> Michael" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[1] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
@@ -452,8 +390,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 5) {
-                                        String[] StringRoutes = { "Diomari -> AJ -> Michael -> CNSC Main Campus",
-                                                        "Diomari -> JM -> Kenet -> AJ -> Michael -> CNSC Main Campus",
+                                        String[] StringRoutes = { "Diomari -> Supermarket -> Michael -> CNSC Main Campus",
+                                                        "Diomari -> JM -> Naruto's house -> Supermarket -> Michael -> CNSC Main Campus",
                                                         "Diomari -> CNSC" };
                                         int[] intRoute1 = { meterDistances[3], meterDistances[1], meterDistances[2] },
                                                         intRoute2 = { meterDistances[5], meterDistances[4],
@@ -470,10 +408,10 @@ public class finalMap {
 
                         case 5:
                                 if (selectedLocation == 0) {
-                                        String[] stringRoutes = { "CNSC Main Campus -> Michael -> AJ -> Kenet",
-                                                        "CNSC Main Campus -> Michael -> AJ -> Diomari -> JM -> Kenet",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Kenet",
-                                                        "CNSC Main Campus -> Diomari -> AJ -> Kenet" };
+                                        String[] stringRoutes = { "CNSC Main Campus -> Michael -> Supermarket -> Naruto's house",
+                                                        "CNSC Main Campus -> Michael -> Supermarket -> Diomari -> JM -> Naruto's house",
+                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house",
+                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[0] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
                                                                         meterDistances[3], meterDistances[5],
@@ -486,10 +424,10 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoutes, total);
                                 } else if (selectedLocation == 1) {
-                                        String[] stringRoute = { "CNSC Main Campus -> Michael -> AJ -> Kenet -> JM",
-                                                        "CNSC Main Campus -> Michael -> AJ -> Diomari -> JM",
+                                        String[] stringRoute = { "CNSC Main Campus -> Michael -> Supermarket -> Kenet -> JM",
+                                                        "CNSC Main Campus -> Michael -> Supermarket -> Diomari -> JM",
                                                         "CNSC Main Campus -> Diomari -> JM",
-                                                        "CNSC Main Campus -> Diomari -> AJ -> Kenet -> JM" };
+                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Naruto's house -> JM" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[0],
                                                         meterDistances[4] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
@@ -501,9 +439,9 @@ public class finalMap {
                                                         getTotal(intRoute4) };
                                         possibleRoutes(stringRoute, total);
                                 } else if (selectedLocation == 2) {
-                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> AJ",
-                                                        "CNSC Main Campus -> Diomari -> AJ",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Kenet -> AJ" };
+                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> Supermarket",
+                                                        "CNSC Main Campus -> Diomari -> Supermarket",
+                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house -> Supermarket" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1] },
                                                         intRoute2 = { meterDistances[6], meterDistances[3] },
                                                         intRoute3 = { meterDistances[6], meterDistances[5],
@@ -512,8 +450,8 @@ public class finalMap {
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 3) {
                                         String[] StringRoutes = { "CNSC Main Campus -> Michael",
-                                                        "CNSC Main Campus -> Diomari -> AJ -> Michael",
-                                                        "CNSC Main Campus -> Diomari -> JM -> Kenet -> AJ -> Michael" };
+                                                        "CNSC Main Campus -> Diomari -> Supermarket -> Michael",
+                                                        "CNSC Main Campus -> Diomari -> JM -> Naruto's house -> Supermarket -> Michael" };
                                         int[] intRoute1 = { meterDistances[2] },
                                                         intRoute2 = { meterDistances[6], meterDistances[3],
                                                                         meterDistances[1] },
@@ -523,8 +461,8 @@ public class finalMap {
                                         int[] total = { getTotal(intRoute1), getTotal(intRoute2), getTotal(intRoute3) };
                                         possibleRoutes(StringRoutes, total);
                                 } else if (selectedLocation == 4) {
-                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> AJ -> Diomari",
-                                                        "CNSC Main Campus -> Michael -> AJ -> Kenet -> JM -> Diomari",
+                                        String[] StringRoutes = { "CNSC Main Campus -> Michael -> Supermarket -> Diomari",
+                                                        "CNSC Main Campus -> Michael -> Supermarket -> Naruto's house -> JM -> Diomari",
                                                         "CNSC Main Campus -> Diomari" };
                                         int[] intRoute1 = { meterDistances[2], meterDistances[1], meterDistances[3] },
                                                         intRoute2 = { meterDistances[2], meterDistances[1],
@@ -560,16 +498,7 @@ public class finalMap {
                 Random random = new Random();
 
                 String storyLine = """
-                                Michael: Michael, an industrious student, resides in a modest boarding house just a stone's throw away from CNSC. His passion for computer science is unmatched, spending countless hours coding and working on innovative projects in the college's computer lab. Despite his intense focus on academics, Michael is always willing to lend a helping hand to his fellow boarders, whether it's debugging code or offering study tips.
-
-                                Diomari: Diomari exudes warmth and vitality, residing in a bustling boarding house a few blocks from CNSC. A sports enthusiast, he dominates the basketball court with his agile moves and infectious energy. Diomari's jovial nature fosters camaraderie among his fellow boarders, often organizing friendly matches and outdoor adventures. Despite his love for sports, he maintains a balance, excelling in his studies and engaging in community service initiatives.
-
-                                John Michael: John Michael, a contemplative soul, finds solace in a serene boarding house nestled on the outskirts of CNSC. His passion lies in the world of literature, where he delves into the depths of poetry and prose. Amidst the tranquility of his surroundings, John Michael crafts captivating narratives, drawing inspiration from his observations of human nature. He dreams of one day sharing his literary creations with a wider audience, weaving tales that resonate with the human experience.
-
-                                Kenet: Kenet, a pragmatic thinker, calls a cozy boarding house near the campus library his home. His fervor for environmental science drives him to spearhead sustainability initiatives both on and off campus. Kenet's dedication to conservation extends beyond the classroom as he volunteers for local environmental organizations and leads community clean-up efforts. His unwavering commitment inspires his fellow boarders to adopt eco-friendly practices, fostering a greener future.
-
-                                Aaron Joshua: Aaron Joshua, a charismatic leader, resides in a vibrant boarding house at the heart of the CNSC campus. His magnetic personality and persuasive charm propel him into student government and extracurricular activities. Aaron Joshua's vision for positive change ignites a sense of purpose among his peers, rallying them behind impactful causes. Despite his ambitious pursuits, he remains approachable, offering mentorship and guidance to his fellow boarders on their journey to success.
-
+                                Welcome Player...
                                                 """;
                 System.out.println();
                 System.out.println();
